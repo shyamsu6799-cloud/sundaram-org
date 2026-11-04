@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="SUNDARAM.ORG — विद्यार्थियों के लिए मुफ्त अध्ययन सामग्री, प्रतियोगी परीक्षा तैयारी, क्विज़ और सीखने के संसाधन।">
+<meta name="theme-color" content="#10234b">
+<title>SUNDARAM.ORG | शिक्षा से सफलता तक</title>
+<style>
+:root{--navy:#10234b;--blue:#2458c6;--gold:#f3b847;--ink:#17233b;--muted:#66738a;--paper:#f5f7fc;--white:#fff;--line:#e5eaf3;--green:#16845b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,"Noto Sans Devanagari",Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.6}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:#ffffffed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:.3px;color:var(--navy);font-size:1.15rem}.logo{width:43px;height:43px;border-radius:13px;background:linear-gradient(145deg,#2458c6,#10234b);display:grid;place-items:center;color:white;font-weight:900;box-shadow:0 7px 18px #10234b30}.brand small{display:block;font-size:.65rem;color:var(--muted);letter-spacing:1.6px;font-weight:700}.links{display:flex;gap:25px;align-items:center;font-size:.91rem;font-weight:650;color:#42506a}.links a:hover{color:var(--blue)}.nav-cta,.btn{border:0;border-radius:12px;padding:12px 18px;background:var(--blue);color:white;font-weight:800;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:.2s}.nav-cta:hover,.btn:hover{transform:translateY(-2px);box-shadow:0 9px 20px #2458c633}.menu{display:none;background:none;border:0;font-size:1.6rem;color:var(--navy)}
+.hero{background:radial-gradient(circle at 85% 15%,#335fa8 0,transparent 29%),linear-gradient(120deg,#0d1e40,#183b79);color:white;padding:76px 0 72px;overflow:hidden;position:relative}.hero:after{content:"";position:absolute;width:390px;height:390px;border:1px solid #ffffff20;border-radius:50%;right:-110px;bottom:-230px;box-shadow:0 0 0 45px #ffffff08,0 0 0 90px #ffffff06}.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:45px;position:relative;z-index:1}.eyebrow{display:inline-flex;gap:8px;align-items:center;color:#ffdb91;background:#ffffff13;border:1px solid #ffffff28;padding:7px 12px;border-radius:99px;font-size:.82rem;font-weight:750}.hero h1{font-size:clamp(2.4rem,5.2vw,4.4rem);line-height:1.12;letter-spacing:-1.8px;margin:20px 0}.hero h1 span{color:#ffca68}.hero p{color:#d7e1f4;font-size:1.08rem;max-width:610px;margin:0 0 27px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.btn.gold{background:var(--gold);color:#182746}.btn.outline{background:transparent;border:1px solid #ffffff70;color:#fff}.hero-note{font-size:.83rem;color:#c2d0e8;margin-top:18px}.study-card{background:#fff;color:var(--ink);padding:25px;border-radius:23px;box-shadow:0 24px 65px #0004;transform:rotate(1.2deg)}.study-card-top{display:flex;justify-content:space-between;align-items:center}.study-card h3{margin:7px 0 2px;font-size:1.25rem}.study-card p{color:var(--muted);font-size:.88rem;margin:0}.mini-tag{background:#eaf1ff;color:#2458c6;padding:5px 9px;border-radius:8px;font-size:.72rem;font-weight:800}.progress{height:8px;border-radius:99px;background:#edf0f6;margin:19px 0 8px;overflow:hidden}.progress span{display:block;width:72%;height:100%;background:linear-gradient(90deg,#2458c6,#61a2ff);border-radius:99px}.stat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:17px}.stat{background:#f5f7fc;padding:13px;border-radius:13px}.stat b{display:block;color:var(--navy);font-size:1.15rem}.stat small{color:var(--muted)}
+
+.welcome-photo{background:#0d1e40;text-align:center;padding:0;line-height:0}
+.welcome-photo img{display:block;width:100%;height:min(82vh,900px);object-fit:contain;object-position:center;margin:0 auto}
+section{padding:75px 0}.section-head{text-align:center;max-width:700px;margin:0 auto 36px}.kicker{color:var(--blue);font-weight:850;text-transform:uppercase;letter-spacing:1.6px;font-size:.75rem}.section-head h2{font-size:clamp(1.8rem,3vw,2.55rem);line-height:1.2;margin:9px 0 12px;color:var(--navy)}.section-head p{color:var(--muted);margin:0}.features{background:var(--paper)}.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}.tile{background:#fff;border:1px solid var(--line);border-radius:17px;padding:22px;transition:.2s}.tile:hover{transform:translateY(-5px);box-shadow:0 15px 35px #162b5010}.tile-icon{width:47px;height:47px;border-radius:14px;display:grid;place-items:center;background:#edf3ff;font-size:1.4rem}.tile h3{margin:15px 0 5px;color:var(--navy);font-size:1.08rem}.tile p{margin:0;color:var(--muted);font-size:.9rem}
+.exam-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.exam{border:1px solid var(--line);border-radius:17px;padding:22px;display:flex;gap:14px;align-items:flex-start}.exam .tile-icon{flex-shrink:0}.exam h3{margin:0 0 4px;color:var(--navy)}.exam p{margin:0;color:var(--muted);font-size:.88rem}
+.quiz{background:linear-gradient(120deg,#f4f7ff,#fff9ed)}.quiz-box{max-width:760px;margin:auto;background:white;border:1px solid var(--line);border-radius:22px;padding:27px;box-shadow:0 14px 40px #152c5010}.quiz-meta{display:flex;justify-content:space-between;color:var(--muted);font-size:.82rem;font-weight:750}.quiz-box h3{margin:16px 0}.answers{display:grid;gap:10px}.answer{border:1px solid var(--line);background:#fff;text-align:left;padding:13px 15px;border-radius:12px;font:inherit;cursor:pointer}.answer:hover{border-color:var(--blue);background:#f7f9ff}.answer.correct{border-color:#16845b;background:#eaf8f1}.answer.wrong{border-color:#d34a4a;background:#fff0f0}.feedback{min-height:28px;margin:13px 0;color:var(--green);font-weight:750}.quiz-actions{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.callout{background:var(--navy);color:#fff;border-radius:24px;padding:37px;display:flex;justify-content:space-between;align-items:center;gap:25px}.callout h2{margin:0 0 7px;font-size:1.8rem}.callout p{margin:0;color:#cbd7eb}.callout .btn{white-space:nowrap}
+footer{background:#0b1731;color:#d5def0;padding:48px 0 20px}.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:35px;padding-bottom:30px}.foot-brand{color:white;font-size:1.2rem;font-weight:900}.foot-grid p{color:#aab8d0;max-width:360px;font-size:.9rem}.foot-grid h4{color:white;margin:0 0 12px}.foot-links{display:grid;gap:8px;color:#b9c6dc;font-size:.9rem}.foot-links a:hover{color:#ffca68}.copyright{border-top:1px solid #ffffff20;padding-top:17px;color:#91a1bd;font-size:.8rem;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.notice{font-size:.78rem;color:#6b7890;margin-top:18px}
+@media(max-width:900px){.links{gap:14px}.grid4{grid-template-columns:repeat(2,1fr)}.hero-grid{gap:25px}.exam-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:680px){.nav{height:67px}.menu{display:block}.links{display:none;position:absolute;left:0;right:0;top:67px;background:white;padding:18px 5%;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.links.open{display:flex}.nav-cta{display:none}.hero{padding:55px 0}.hero-grid{grid-template-columns:1fr}.study-card{transform:none}.hero h1{letter-spacing:-1px}.grid4,.exam-grid{grid-template-columns:1fr}.callout{padding:27px;display:block}.callout .btn{margin-top:18px}.foot-grid{grid-template-columns:1fr;gap:22px}section{padding:58px 0}.quiz-box{padding:19px}}
+
+.photo-welcome{height:min(76vh,720px);min-height:430px;position:relative;overflow:hidden;background:#10234b}
+.photo-welcome img{width:100%;height:100%;object-fit:cover;object-position:center 34%;display:block}
+.photo-shade{position:absolute;inset:0;background:linear-gradient(90deg,#07152c9c 0%,#07152c40 48%,transparent 100%),linear-gradient(0deg,#07152c70,transparent 60%)}
+.photo-caption{position:absolute;left:max(4%,calc((100% - 1160px)/2));bottom:11%;color:white;z-index:2;text-shadow:0 2px 14px #0008}
+.photo-kicker{font-weight:850;letter-spacing:3px;color:#ffcf73;font-size:.82rem}
+.photo-caption h1{font-size:clamp(2.5rem,6vw,5rem);line-height:1;margin:12px 0;letter-spacing:-1.5px}
+.photo-caption p{font-size:1.15rem;font-weight:700;margin:0 0 22px}
+@media(max-width:680px){.photo-welcome{height:72vh;min-height:480px}.photo-welcome img{object-position:center 28%}.photo-shade{background:linear-gradient(0deg,#07152cbd 0%,#07152c20 75%)}.photo-caption{left:6%;right:6%;bottom:7%}}
+
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#home"><span class="logo">S</span><span>SUNDARAM.ORG<small>LEARN • GROW • SUCCEED</small></span></a>
+<button class="menu" aria-label="मेन्यू खोलें" onclick="document.querySelector('.links').classList.toggle('open')">☰</button>
+<nav class="links"><a href="#home">होम</a><a href="#resources">अध्ययन सामग्री</a><a href="#exams">परीक्षाएँ</a><a href="#quiz">क्विज़</a><a href="#about">हमारे बारे में</a></nav>
+<a class="nav-cta" href="#resources">पढ़ना शुरू करें →</a>
+</div></header>
+<section class="welcome-photo" aria-label="SUNDARAM.ORG स्वागत चित्र">
+  <img src="assets/sundaram-welcome-photo.png" alt="SUNDARAM.ORG के स्वागत पृष्ठ के लिए चुनी गई तस्वीर">
+</section>
+<main>
+<section class="hero" id="home"><div class="wrap hero-grid">
+<div><span class="eyebrow">✦ हर विद्यार्थी के सपनों के लिए</span><h1>सीखने की नई शुरुआत,<br><span>सफलता की ओर।</span></h1>
+<p>SUNDARAM.ORG पर पढ़ाई को सरल बनाइए। यहाँ आपको प्रतियोगी परीक्षाओं की तैयारी, उपयोगी अध्ययन सामग्री और अभ्यास के लिए क्विज़ एक ही जगह मिलेंगे।</p>
+<div class="hero-actions"><a class="btn gold" href="#resources">अध्ययन शुरू करें</a><a class="btn outline" href="#quiz">मिनी क्विज़ दें</a></div>
+<div class="hero-note">✓ सीखें अपनी गति से &nbsp; ✓ मोबाइल-फ्रेंडली &nbsp; ✓ शिक्षा सबके लिए</div></div>
+<div class="study-card"><div class="study-card-top"><span class="mini-tag">LEARNING HUB</span><span>📚</span></div><h3>आज कुछ नया सीखें</h3><p>छोटे कदम, बड़ी सफलता।</p><div class="progress"><span></span></div><div style="display:flex;justify-content:space-between;font-size:.78rem;color:#66738a"><span>सीखने की प्रेरणा</span><b>हर दिन</b></div><div class="stat-grid"><div class="stat"><b>01</b><small>आज का लक्ष्य</small></div><div class="stat"><b>∞</b><small>सीखने के अवसर</small></div></div><p style="margin-top:16px;font-size:.8rem">“ज्ञान वह शक्ति है जो भविष्य बनाती है।”</p></div>
+</div></section>
+<section class="features" id="resources"><div class="wrap"><div class="section-head"><span class="kicker">आपकी पढ़ाई, आपका प्लेटफॉर्म</span><h2>एक जगह, सीखने के कई रास्ते</h2><p>अपनी जरूरत के अनुसार विषय चुनें और नियमित अभ्यास से आगे बढ़ें।</p></div>
+<div class="grid4">
+<div class="tile"><div class="tile-icon">📘</div><h3>स्टडी मटेरियल</h3><p>विषयवार नोट्स, महत्वपूर्ण प्रश्न और रिवीजन सामग्री।</p></div>
+<div class="tile"><div class="tile-icon">🎯</div><h3>प्रतियोगी परीक्षा</h3><p>SSC, पुलिस, रेलवे और अन्य परीक्षाओं की तैयारी।</p></div>
+<div class="tile"><div class="tile-icon">🧠</div><h3>क्विज़ और टेस्ट</h3><p>अपनी समझ जाँचें और नियमित अभ्यास करें।</p></div>
+<div class="tile"><div class="tile-icon">🌐</div><h3>डिजिटल लर्निंग</h3><p>टेक्नोलॉजी और डिजिटल स्किल्स की बुनियादी जानकारी।</p></div>
+</div><p class="notice" style="text-align:center">नोट: इस शुरुआती संस्करण में पाठ्य सामग्री के सेक्शन तैयार हैं। वास्तविक PDF, वीडियो लेक्चर और कोर्स एडमिन द्वारा जोड़ने के बाद उपलब्ध होंगे।</p>
+</div></section>
+<section id="exams"><div class="wrap"><div class="section-head"><span class="kicker">अपना लक्ष्य चुनें</span><h2>परीक्षा की तैयारी करें</h2><p>अपने लक्ष्य के अनुसार विषयों की योजना बनाएँ और रोज़ थोड़ा अभ्यास करें।</p></div>
+<div class="exam-grid">
+<div class="exam"><div class="tile-icon">🏛️</div><div><h3>SSC परीक्षाएँ</h3><p>रीजनिंग, गणित, अंग्रेज़ी और सामान्य जागरूकता।</p></div></div>
+<div class="exam"><div class="tile-icon">👮</div><div><h3>MP पुलिस</h3><p>सामान्य ज्ञान, रीजनिंग और परीक्षा उपयोगी अभ्यास।</p></div></div>
+<div class="exam"><div class="tile-icon">🚆</div><div><h3>रेलवे</h3><p>गणित, सामान्य विज्ञान और सामान्य जागरूकता।</p></div></div>
+<div class="exam"><div class="tile-icon">📝</div><div><h3>सामान्य अध्ययन</h3><p>इतिहास, भूगोल, संविधान और अर्थव्यवस्था।</p></div></div>
+<div class="exam"><div class="tile-icon">💻</div><div><h3>कंप्यूटर ज्ञान</h3><p>कंप्यूटर की मूल बातें और डिजिटल साक्षरता।</p></div></div>
+<div class="exam"><div class="tile-icon">🗣️</div><div><h3>भाषा कौशल</h3><p>हिंदी और अंग्रेज़ी भाषा का अभ्यास।</p></div></div>
+</div></div></section>
+<section class="quiz" id="quiz"><div class="wrap"><div class="section-head"><span class="kicker">खुद को परखें</span><h2>आज का छोटा क्विज़</h2><p>एक सवाल का जवाब देकर अपनी तैयारी की शुरुआत करें।</p></div>
+<div class="quiz-box"><div class="quiz-meta"><span>सामान्य ज्ञान</span><span>प्रश्न 1 / 1</span></div><h3>भारत का संविधान कब लागू हुआ था?</h3><div class="answers"><button class="answer" onclick="check(this,false)">15 अगस्त 1947</button><button class="answer" onclick="check(this,true)">26 जनवरी 1950</button><button class="answer" onclick="check(this,false)">26 नवंबर 1949</button><button class="answer" onclick="check(this,false)">2 अक्टूबर 1950</button></div><div class="feedback" id="feedback" aria-live="polite"></div><div class="quiz-actions"><span style="font-size:.82rem;color:#66738a">सही उत्तर चुनें।</span><button class="btn" onclick="resetQuiz()">फिर से प्रयास करें</button></div></div></div></section>
+<section id="about"><div class="wrap"><div class="callout"><div><h2>आपका लक्ष्य, आपकी मेहनत, आपकी सफलता।</h2><p>SUNDARAM.ORG — गुणवत्तापूर्ण शिक्षा और सीखने के अवसरों को सरल बनाने की एक पहल।</p></div><a class="btn gold" href="#home">ऊपर जाएँ ↑</a></div></div></section>
+</main>
+<footer><div class="wrap"><div class="foot-grid"><div><div class="foot-brand">SUNDARAM.ORG</div><p>शिक्षा, अभ्यास और आत्मविश्वास के साथ अपने सपनों की ओर एक कदम आगे बढ़ें।</p></div><div><h4>महत्वपूर्ण लिंक</h4><div class="foot-links"><a href="#home">होम</a><a href="#resources">अध्ययन सामग्री</a><a href="#exams">परीक्षा तैयारी</a><a href="#quiz">क्विज़</a></div></div><div><h4>जानकारी</h4><div class="foot-links"><a href="#about">हमारे बारे में</a><a href="#about">संपर्क — जल्द उपलब्ध</a><a href="#about">गोपनीयता नीति — जल्द उपलब्ध</a></div></div></div><div class="copyright"><span>© <span id="year"></span> SUNDARAM.ORG. सर्वाधिकार सुरक्षित।</span><span>ज्ञान • शिक्षा • सफलता</span></div></div></footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+function check(btn,correct){document.querySelectorAll('.answer').forEach(x=>{x.disabled=true;if(x.textContent.includes('26 जनवरी 1950'))x.classList.add('correct')});if(correct){btn.classList.add('correct');document.getElementById('feedback').textContent='बहुत बढ़िया! आपका उत्तर सही है।'}else{btn.classList.add('wrong');document.getElementById('feedback').textContent='कोई बात नहीं — हरा विकल्प सही उत्तर है।'}}
+function resetQuiz(){document.querySelectorAll('.answer').forEach(x=>{x.disabled=false;x.classList.remove('correct','wrong')});document.getElementById('feedback').textContent=''}
+</script>
+</body></html>
